@@ -2,6 +2,6 @@
 
 arxiv [sample](http://home.ustc.edu.cn/~wunq/DLFS/demo.html)
 
-## Idea
+## Model
 
-用了bert
+用sample page能看出用了bert
