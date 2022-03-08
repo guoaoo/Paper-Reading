@@ -3,16 +3,17 @@
 [arxiv](https://arxiv.org/pdf/2110.06306.pdf) | [code](https://github.com/b04901014/FG-transformer-TTS) | [sample](https://b04901014.github.io/FG-transformer-TTS/)
 
 <p align="center">
-    <img src="./img/Snipaste_2022-03-07_10-20-50.png" width="80%">
+    <img src="../img/2%20FINE-GRAINED%20STYLE%20CONTROL%20IN%20TRANSFORMER-BASED%20TEXT-TO-SPEECH%20SYNTHESIS/IMG_20220307-220022006.png" width="80%">
 </p>
 
 ## Model
 
 <p align="center">
-    <img src="./img/Snipaste_2022-03-07_10-01-32.png" width="80%">
+    <img src="../img/2%20FINE-GRAINED%20STYLE%20CONTROL%20IN%20TRANSFORMER-BASED%20TEXT-TO-SPEECH%20SYNTHESIS/IMG_20220307-220008883.png" width="80%">
 </p>
 
 基于TransformerTTS，增加了local style tokens (LST)，将TransformerTTS的content encoder替换为cross-attention block用于对content和style的对齐(alignment)以及融合(fusion)
+花样设计Embedding和Attention
 
 ### Style Network
 
@@ -31,15 +32,15 @@ Text经过self-attention后做skip connections（其实就是残差），再经�
 ## Training and inference
 
 $$\mathbf{L}_{tts} =\| D\left( A\left( S\left( x_{sty}^{s} ,x_{spk}^{s}\right) ,c\right) ,x_{sty}^{s}\right) -Mel\left( x_{sty}^{s}\right) \| _{1}$$
-Training时，对Style Embedding取$\tilde{l}_{sty} \in [ \alpha ,l_{sty}]$，paper中$\alpha$为15，因为在inference阶段，$x_{sty}$可能会比合成的speech短很多，而且提供较少的reference speech信息有助于模型更多的从Text中获取信息，避免内容泄露（content-leakage）问题
+Training时，对Style Embedding取$\tilde{l}_{sty} \in [ \alpha ,l_{sty}]$，paper中$\alpha$为15，因为在inference阶段，$x_{sty}$会比合成的speech短很多，而且提供较少的reference speech信息有助于模型更多的从Text中获取信息，避免内容泄露（content-leakage）问题
 
 ## Experiment
 
 ### Dataset
 
-1. Sin1gle speaker: **LJSpeech**
+1. Single speaker: **LJSpeech**
 2. Multi speaker: **VCTK**
-3. Emotional speech synthesis corpus: [**ESD database**](https://github.com/HLTSingapore/Emotional-Speech-Data) | [**paper**](https://arxiv.org/pdf/2010.14794.pdf)，这篇paper使用了10个speaker每个5种情感共13小时
+3. Emotional speech synthesis corpus: [ESD database](https://github.com/HLTSingapore/Emotional-Speech-Data) | [paper](https://arxiv.org/pdf/2010.14794.pdf)，这篇paper使用了10个speaker每个5种情感共13小时
 
 ### Metrics
 
