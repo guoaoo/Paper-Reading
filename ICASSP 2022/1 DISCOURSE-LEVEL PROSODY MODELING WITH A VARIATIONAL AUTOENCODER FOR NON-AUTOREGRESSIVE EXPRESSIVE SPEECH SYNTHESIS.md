@@ -1,4 +1,4 @@
-# DISCOURSE-LEVEL PROSODY MODELING WITH A VARIATIONAL AUTOENCODER FOR NON-AUTOREGRESSIVE EXPRESSIVE SPEECH SYNTHESIS
+# Discourse-level Prosody Modeling With A Variational Autoencoder For Non-autoregressive Expressive Speech Synthesis
 
 arxiv [sample](http://home.ustc.edu.cn/~wunq/DLFS/demo.html)
 

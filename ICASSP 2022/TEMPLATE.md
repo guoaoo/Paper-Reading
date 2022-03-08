@@ -1,6 +1,6 @@
 # Paper title
 
-[arxiv](https) | [code](https) | [sample](https)
+arxiv | code | sample
 
 ## Model
 

@@ -1,4 +1,4 @@
-# FINE-GRAINED STYLE CONTROL IN TRANSFORMER-BASED TEXT-TO-SPEECH SYNTHESIS
+# Fine-grained Style Control In Transformer-based Text-to-speech Synthesis
 
 [arxiv](https://arxiv.org/pdf/2110.06306.pdf) | [code](https://github.com/b04901014/FG-transformer-TTS) | [sample](https://b04901014.github.io/FG-transformer-TTS/)
 
@@ -32,7 +32,7 @@ Text经过self-attention后做skip connections（其实就是残差），再经�
 ## Training and inference
 
 $$\mathbf{L}_{tts} =\| D\left( A\left( S\left( x_{sty}^{s} ,x_{spk}^{s}\right) ,c\right) ,x_{sty}^{s}\right) -Mel\left( x_{sty}^{s}\right) \| _{1}$$
-Training时，对Style Embedding取$\tilde{l}_{sty} \in [ \alpha ,l_{sty}]$，paper中$\alpha$为15，因为在inference阶段，$x_{sty}$会比合成的speech短很多，而且提供较少的reference speech信息有助于模型更多的从Text中获取信息，避免内容泄露（content-leakage）问题
+Training时，对Style Embedding取$\tilde{l}_{sty} \in [ \alpha ,l_{sty}]$，paper中$\alpha$为15，因为在inference阶段，$x_{sty}$会比合成的speech短很多，而且提供较少的reference speech信息有助于模型更多的从Text中获取信息，避免内容泄露（content-leakage）问题，这一点和之前组会汇报Meta-Stylespeech时，闫老师和蔡老师提出的挖掉一部分的vector再预测另一部分的想法是一样的，没想到真的可以这么做
 
 ## Experiment
 
