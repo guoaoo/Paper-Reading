@@ -18,7 +18,6 @@
 
 Cross-speaker style transfer (CSST), Phonetic PosteriorGram (PPG), style-to-wave (S2W) model
 这篇是把Meta-Stylespeech的SALN和Discriminator都拿来用到中文TTS上了
-看不下去，和我的方向有点无关
 
 ### Modules
 
