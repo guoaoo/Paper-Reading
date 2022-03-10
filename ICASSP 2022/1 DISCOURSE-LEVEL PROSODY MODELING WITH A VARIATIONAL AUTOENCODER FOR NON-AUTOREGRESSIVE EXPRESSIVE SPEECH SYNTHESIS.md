@@ -1,6 +1,6 @@
 # Discourse-level Prosody Modeling With A Variational Autoencoder For Non-autoregressive Expressive Speech Synthesis
 
-arxiv [sample](http://home.ustc.edu.cn/~wunq/DLFS/demo.html)
+arxiv | [sample](http://home.ustc.edu.cn/~wunq/DLFS/demo.html)
 
 ## Model
 

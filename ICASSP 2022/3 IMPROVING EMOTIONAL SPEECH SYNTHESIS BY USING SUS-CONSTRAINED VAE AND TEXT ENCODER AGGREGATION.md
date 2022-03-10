@@ -1,6 +1,6 @@
 # Improving Emotional Speech Synthesis By Using Sus-constrained Vae And Text Encoder Aggregation
 
-[arxiv]([https](https://arxiv.org/pdf/2110.09780.pdf)) | code | [sample](https://fyyang1996.github.io/emotion/)
+[arxiv](https://arxiv.org/pdf/2110.09780.pdf) | code | [sample](https://fyyang1996.github.io/emotion/)
 
 <p align=center>
     <img alt="图 8" src="../img/3%20IMPROVING%20EMOTIONAL%20SPEECH%20SYNTHESIS%20BY%20USING%20SUS-CONSTRAINED%20VAE%20AND%20TEXT%20ENCODER%20AGGREGATION/IMG_20220307-220545946.png", width="80%">
