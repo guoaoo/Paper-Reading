@@ -6,7 +6,7 @@
 - [ ] 4. Interactive Multi-level Prosody Control For Expressive Speech Synthesis
 - [x] 5. [Unsupervised Word-level Prosody Tagging For Controllable Speech Synthesis](/ICASSP%202022/5%20Unsupervised%20Word-level%20Prosody%20Tagging%20For%20Controllable%20Speech%20Synthesis.md)
 - [x] 6. [Hierarchical Prosody Modeling And Control In Non-autoregressive Parallel Neural TTS](/ICASSP%202022/6%20Hierarchical%20Prosody%20Modeling%20And%20Control%20In%20Non-autoregressive%20Parallel%20Neural%20TTS.md)
-- [ ] 7. Prosodyspeech: Towards Advanced Provsody Model For Neural Text-to-speech
+- [ ] 7. [Prosodyspeech: Towards Advanced Provsody Model For Neural Text-to-speech](7%20ProsoSpeech%20Enhancing%20Prosody%20With%20Quantized%20Vector%20Pre-training%20in%20Text-to-Speech.md)
 - [ ] 8. Joint And Adversarial Training With Asr For Expressive Speech Synthesis
 - [x] 9. [Referee: Towards Reference-free Cross-speaker Style Transfer With Low-quality Data For Expressive Speech Synthesis](/ICASSP%202022/9%20Referee%20Towards%20Reference-free%20Cross-speaker%20Style%20Transfer%20With%20Low-quality%20Data%20For%20Expressive%20Speech%20Synthesis.md)
 - [ ] 10. Towards Expressive Speaking Style Modelling With Hierarchical Context Information For Mandarin Speech Synthesis
