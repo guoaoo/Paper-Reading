@@ -17,17 +17,17 @@
 
 ### Style Network
 
-#### Style Embedding
+#### Speaker Embedding GST
 
-将Wav2Vec得到的结果经过LSTM以及pooling层，MHA没画出来，LSTM每一时间步（称为frame-level）的结果作为MHA的Q，和GST一样有可训练的K和V，得到结果作为Style Embedding
+MHA没画出来；将Wav2Vec得到的结果过Dropout、linear和relu后再过LSTM，之后根据mask在sentence sequence维度上求平均后作为MHA的Q，可训练的token作为K和V，得到结果作为Speaker embedding
 
-#### Speaker Embedding
+#### Style Embedding LST
 
-GST这里的MHA也没画出来，将Wav2Vec得到的结果平均后作为Q，可训练的token作为K和V，得到结果作为Speaker embedding
+MHA也没画出来；将Wav2Vec得到的结果经过LSTM（称为frame-level）后作为MHA的Q，和GST一样有可训练的K和V，再通过平均池化层后的结果作为Style Embedding
 
 ### Content-style cross-attention blocks
 
-Text经过self-attention后做skip connections（其实就是残差），再经过Transformer结构（可堆叠多层），之后作为**Query**与Style Embedding的**Key**和Speaker Embedding的**Value**再做一次MHA，后进入TransformerTTS的Decoder
+Text经过self-attention后做skip connections（其实就是残差），再经过Transformer结构（可堆叠多层），之后作为**Query**与Style Embedding和和Speaker Embedding相加得到的**Key**和**Value**再做一次MHA，后同样经过残差与projection层，重复block 5层，后进入TransformerTTS的Decoder
 
 ## Training and inference
 
